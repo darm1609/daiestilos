@@ -1,0 +1,26 @@
+<?php
+	session_start();
+	require("head.php");
+	require("config.php");
+	require("librerias/basedatos.php");
+	require("funciones_generales.php");
+	if(isset($_SESSION["login"]))
+	{
+		require("superior.php");
+		$abono_pecuadreluqueria=true;
+		require_once("menu_lateral.php");
+		require_once("contenido_head.php");
+		echo"<br>";
+		require("editar_usuario_contenido.php");
+		unset($abono_peluqueria);
+	}
+	else
+	{
+		?>
+		<script>
+			window.location.replace('.');
+		</script>
+		<?php
+	}
+	require("pie.php");
+?>
