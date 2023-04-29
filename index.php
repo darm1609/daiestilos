@@ -79,8 +79,9 @@
 			}
 			$result->free();
 		}
-		else
+		else {
 			unset($result);
+		}
 		return $valido;
 	}
 
@@ -88,7 +89,7 @@
 	{
 		?>
 		<div class="div-logo-inicial">
-			<img src="imagenes/logo_inicial.png" width="360px" class="logo-inicial">
+			<!-- <img src="imagenes/logo_inicial.png" width="360px" class="logo-inicial"> -->
 		</div>
 		<div id="formulario" class="w3-container w3-cell w3-display-middle">
 			<form class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" id="flogin" id="flogin" name="flogin" method="post">
@@ -198,7 +199,7 @@
 ?>
 <footer class='w3-display-bottommiddle' style='text-align:center;'>
 	<p>
-		<img src="imagenes/vinkasoftware.png" width="50px" class="logo-inicial">
+		<!-- <img src="imagenes/vinkasoftware.png" width="50px" class="logo-inicial"> -->
 		<br>
 		Powered by VinkaSoftware
 	</p>
